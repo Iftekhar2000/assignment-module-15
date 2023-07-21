@@ -21,7 +21,7 @@ const App = () => {
       <h1>My Todo App</h1>
           <input onChange={(e) => setItem(e.target.value)} value={item} placeholder="item" />
     
-          <button onClick={AddToList}>Add to list</button>
+          <button onClick={AddToList}>+ Add to list</button>
 
       <table>
         <tbody>
@@ -30,7 +30,7 @@ const App = () => {
               <tr key={index}>
                 <td>{element}</td>
                 <td>
-                  <button onClick={() => RemoveFromList(index)}>Remove Item</button>
+                  <button onClick={() => RemoveFromList(index)}>- Remove Item</button>
                 </td>
               </tr>
             ))
